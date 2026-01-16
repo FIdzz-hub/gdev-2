@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile card</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<script>
+    function setTheme(themeName) {
+        const card = document.getElementById("profileCard");
+        card.className = "card " + themeName;
+    }
+</script>
+
+<body>
+    <div class="container">
+        <div class="theme-switcher">
+            <button onclick="setTheme('theme-1')">
+                <i class="fa-solid fa-sun"></i> Theme 1
+            </button>
+            <button onclick="setTheme('theme-2')">
+                <i class="fa-solid fa-moon"></i> Theme 2
+            </button>
+            <button onclick="setTheme('theme-3')">
+                <i class="fa-solid fa-palette"></i> Theme 3
+            </button>
+            <button onclick="setTheme('theme-4')">
+                <i class="fa-solid fa-bolt"></i> Theme 4
+            </button>
+        </div>
+        <br>
+        <div class="card theme-1" id="profileCard">
+            <div class="photo">
+                <img src="Profile Picture.png" alt="Foto Profil">
+            </div>
+
+            <div class="info">
+                <h2>Hafidz Shabhan Fadhil</h2>
+                <p><strong>Jurusan:</strong> Sistem Informasi</p>
+                <p><strong>Fakultas:</strong> Rekayasa Industri</p>
+                <p><strong>Hobi:</strong> Coding, olahraga</p>
+
+                <p class="about">
+                    Saya adalah mahasiswa yang tertarik pada pengembangan web
+                    dan sedang belajar HTML, CSS, dan JavaScript.
+                </p>
+            </div>
+        </div>
+
+        <div class="btn">
+            <a class="btn-btn" href="index.html">Back</a>
+        </div>
+
+        <script>
+            function setTheme(themeName) {
+                const card = document.getElementById("profileCard");
+                card.className = "card " + themeName;
+            }
+        </script>
+    </div>
+</body>
+
+</html>
